@@ -17,25 +17,39 @@ class MyApp extends StatelessWidget {
         body: const SingleChildScrollView(
           child: Column(
             children: [
-              // TitleSection(
-              //     name: "Oeschinen Lake Campground",
-              //     location: "Kandersteng, Switzerland"),
-              TitleSection(name: "El Panecillo", location: "Quito, Ecuador"),
               ImageSection(image: "images/panecillo.jpg"),
+              TitleSection(name: "El Panecillo", location: "Quito, Ecuador"),
               ButtonSection(),
               TextSection(
                   description:
                       "Elevación natural de 3.000 metros sobre el nivel del mar, fue bautizada con este nombre por su parecido con un pequeño pan; está enclavada en el corazón mismo de la ciudad de Quito."),
+              ImageSection(image: "images/lagoSanPablo.jpg"),
               TitleSection(
                   name: "Lago San Pablo", location: "Otavalo, Ecuador"),
               ButtonSection(),
+              TextSection(
+                  description:
+                      "La Mama Imbakucha o Lago San Pablo (2.660 msnm) es el más grande del Ecuador. Su cuenca hidrográfica encierra uno de los paisajes culturales más impresionantes del país"),
+              ImageSection(image: "images/mitadMundo.jpg"),
               TitleSection(name: "Mitad del Mundo", location: "Quito, Ecuador"),
               ButtonSection(),
-              TitleSection(name: "Galápagos", location: "Galápagos, Ecuador"),
-              ButtonSection(),
+              TextSection(
+                  description:
+                      "La Mitad del Mundo es un sitio icónico del Ecuador, ya que el país toma el nombre de la Línea Ecuatorial, una línea imaginaria que divide al planeta en hemisferio norte y sur."),
+              ImageSection(image: "images/cuicocha.jpg"),
               TitleSection(
-                  name: "Malecón 2000", location: "Guayaquil, Ecuador"),
+                  name: "Laguna de Cuicocha", location: "Cotacachi, Ecuador"),
               ButtonSection(),
+              TextSection(
+                  description:
+                      "La majestuosa y ecológica Laguna de Cuicocha (Tsui-Cocha), denominada “Laguna de los Dioses” está ubicada 12 Km. al Sur Oeste de Cotacachi y 14 Km. de Otavalo, con una altitud de 3.068 m.s.n.m., forma parte de la Reserva Cotacachi-Cayapas, que se ubica entre las provincias de Imbabura y Esmeraldas."),
+              ImageSection(image: "images/atacames.jpg"),
+              TitleSection(
+                  name: "Playa de Atacames", location: "Atacames, Ecuador"),
+              ButtonSection(),
+              TextSection(
+                  description:
+                      "La playa de Atacames tiene una extensión aproximada de 5 a 6 kilómetros y 500 metros de amplitud, pertenece a la zona de vida bosque seco tropical y esta bordeada por cocoteros aunque escasamente se puede encontrar especies arbóreas ornamentales y pastizal.")
             ],
           ),
         ),
@@ -189,11 +203,6 @@ class ImageSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset(
-      image,
-      width: 600,
-      height: 240,
-      fit: BoxFit.cover,
-    );
+    return Image.asset(image, width: 600, height: 240, fit: BoxFit.cover);
   }
 }
