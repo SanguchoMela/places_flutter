@@ -29,3 +29,11 @@ flutter pub get
 ```bash
 flutter run
 ```
+
+## Generar apk
+
+1. Ejecuta el comando
+
+```bash
+flutter build apk --split-per-abi
+```
